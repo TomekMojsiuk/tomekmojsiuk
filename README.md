@@ -1,2 +1,0 @@
-# tomekmojsiuk
-Created with CodeSandbox

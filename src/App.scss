@@ -1,0 +1,19 @@
+
+@import './Scss/Config/Fonts.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 10px;
+  @include Karla;
+}
+
+.App {
+  background-image: linear-gradient(to top, #051937, #092a49, #103c5b, #194f6c, #25627c);
+  background-size: contain;
+  height: 100vh;
+}
