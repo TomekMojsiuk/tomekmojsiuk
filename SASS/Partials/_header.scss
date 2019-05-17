@@ -1,3 +1,57 @@
-.main--nav {
-    font-size: 2rem;
+@import "../Config/functions";
+
+header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-size: 2rem;
+ //height: 100%;
+
+ @media all and (min-width: $breakpoint-desktop) {
+  font-size: 1.5rem;
+ }
+}
+
+.main--nav--list {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 70%;
+ &--item {
+  margin: 30px 0;
+ }
+
+ @media all and (min-width: $breakpoint-desktop) {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  &--item {
+   margin-right: 20px;
+	 padding: 10px 0;
+	 &:last-child {
+		 margin-right: 0;
+	 }
+  }
+ }
+}
+
+//Icons
+.social--media--icons {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ margin: 150px 0 0 0;
+ width: 60%;
+ height: 80px;
+ border: 1px solid black;
+}
+.email,
+.github,
+.linkedin {
+ height: 67px;
+ width: 67px;
 }

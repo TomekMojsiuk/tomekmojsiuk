@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>tomekmojsiuk</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+  <script
+   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+   crossorigin="anonymous"
+  ></script>
+ </head>
 
-<body>
-    <div class="main-container">
-    <header>
-        <div class="main--nav">
-            <ul class="main--nav--list">
-                <li class="main--nav--list--item"><a href="">Home</a></li>
-                <li class="main--nav--list--item"><a href="">About me</a></li>
-                <li class="main--nav--list--item"><a href="">Portfolio</a></li>
-                <li class="main--nav--list--item"><a href="">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <main></main>
-    <footer></footer>
-</div>
-</body>
-<script src="./JS/out.js"></script>
+ <body>
+  <div class="main-container">
+   <header>
+    <!-- Hamburger in mobile version appears here -->
+    <div class="main--nav">
+     <ul class="main--nav--list">
+      <li class="main--nav--list--item"><a href="#">Home</a></li>
+      <li class="main--nav--list--item"><a href="#">About me</a></li>
+      <li class="main--nav--list--item"><a href="#">Portfolio</a></li>
+      <li class="main--nav--list--item"><a href="#">Contact</a></li>
+     </ul>
+    </div>
+    <span></span>
+    <div class="social--media--icons">
+     <div class="email"><img src="./assets/icons/email_orange.svg" alt=""></div>
+     <div class="github"><img src="./assets/icons/github_orange.svg" alt=""></div>
+     <div class="linkedin"><img src="./assets/icons/linkedin_orange.svg" alt=""></div>
+    </div>
+   </header>
+   <main>
+    <section class="home"></section>
 
+    <section class="about--me">About me</section>
+    <section class="portfolio">Portfolio</section>
+    <section class="contact">Contact me</section>
+   </main>
+   <footer>Footer</footer>
+  </div>
+ </body>
+ <script src="./JS/out.js"></script>
 </html>
