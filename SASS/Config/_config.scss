@@ -1,0 +1,29 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $font-color-main;
+}
+
+html,
+body {
+  font-family: "Calibri Light", sans-serif;
+  font-size: 10px;
+  background: $bg-main-color;
+  height: 100vh;
+}
+
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    // color: $font-color-main;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 900px;
+  height: 100vh;
+}
