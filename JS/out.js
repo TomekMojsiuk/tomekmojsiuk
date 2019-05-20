@@ -105,7 +105,19 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../SASS/Style.scss */ \"./SASS/Style.scss\");\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("\n\n__webpack_require__(/*! ./navMobile */ \"./js/navMobile.js\");\n\n__webpack_require__(/*! ../SASS/Style.scss */ \"./SASS/Style.scss\");\n\n$(document).ready(function () {\n\n    var mainNav = $('.main--nav');\n    console.log(mainNav);\n});\n\n//# sourceURL=webpack:///./js/app.js?");
+
+/***/ }),
+
+/***/ "./js/navMobile.js":
+/*!*************************!*\
+  !*** ./js/navMobile.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./js/navMobile.js?");
 
 /***/ }),
 
@@ -116,7 +128,7 @@ eval("\n\n__webpack_require__(/*! ../SASS/Style.scss */ \"./SASS/Style.scss\");\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  margin: 0;\\n  padding: 0;\\n  color: #d5e2fd; }\\n\\nhtml,\\nbody {\\n  font-family: \\\"Calibri Light\\\", sans-serif;\\n  font-size: 10px;\\n  background: linear-gradient(to top, #051937, #092a49, #103c5b, #194f6c, #25627c);\\n  height: 100vh; }\\n\\nul, li {\\n  list-style: none; }\\n\\na {\\n  text-decoration: none; }\\n\\n.main-container {\\n  margin: 0 auto;\\n  max-width: 900px;\\n  height: 100vh; }\\n\\n.main--nav {\\n  font-size: 2rem; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./SASS/Style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  margin: 0;\\n  padding: 0;\\n  color: #d5e2fd; }\\n\\nhtml,\\nbody {\\n  font-family: \\\"Calibri Light\\\", sans-serif;\\n  font-size: 20px;\\n  background: linear-gradient(to top, #05111A, #092233, #092233, #0B283D, #113E5E); }\\n\\nul, li {\\n  list-style: none; }\\n\\na {\\n  text-decoration: none; }\\n\\nspan {\\n  color: #F59C00; }\\n\\n.main-container {\\n  margin: 0 auto;\\n  padding: 0 10px;\\n  max-width: 900px;\\n  height: 100vh;\\n  display: flex;\\n  flex-direction: column; }\\n\\nheader {\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n  justify-content: center;\\n  font-size: 2rem; }\\n  @media all and (min-width: 640px) {\\n    header {\\n      font-size: 1.5rem; } }\\n\\n.main--nav--list {\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  height: 70%; }\\n  .main--nav--list--item {\\n    margin: 30px 0; }\\n  @media all and (min-width: 640px) {\\n    .main--nav--list {\\n      flex-direction: row;\\n      justify-content: flex-end;\\n      width: 100%;\\n      height: auto; }\\n      .main--nav--list--item {\\n        margin-right: 20px;\\n        padding: 10px 0; }\\n        .main--nav--list--item:last-child {\\n          margin-right: 0; } }\\n\\n.social--media--icons {\\n  display: flex;\\n  flex-direction: row;\\n  justify-content: space-around;\\n  align-items: center;\\n  margin: 150px 0 0 0;\\n  width: 60%;\\n  height: 80px;\\n  border: 1px solid black; }\\n\\n.email,\\n.github,\\n.linkedin {\\n  height: 67px;\\n  width: 67px; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./SASS/Style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
