@@ -1,8 +1,11 @@
 @import './Config/colors';
 @import './Config/config';
+@import './Config/functions';
 
 //Assets
-@import './Partials/hamburger';
+@import './Partials/Header/hamburger';
+@import './Partials/Header/main-nav';
+
 // Sections
-@import './Partials/header'
+@import './Partials/Header/header';
 
