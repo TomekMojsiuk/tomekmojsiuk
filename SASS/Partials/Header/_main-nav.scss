@@ -60,11 +60,11 @@
      //z-index: -1;
      border-radius: 5px;
      transition: height 0.2s ease-in-out;
-     box-shadow: $box-shadow;
     }
     &:hover {
      &::after {
       height: 70px;
+      box-shadow: $box-shadow;
      }
     }
    }
