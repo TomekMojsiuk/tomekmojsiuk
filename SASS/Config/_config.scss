@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./functions";
 
 * {
   margin: 0;
@@ -10,7 +11,12 @@ html,
 body {
   font-family: "Calibri Light", sans-serif;
   font-size: 20px;
+  min-height: 1000px;
   background: $bg-main-color_2;
+
+  @media all and (min-width: $breakpoint-desktop) {
+    min-height: 100vh;
+   }
 }
 
 ul, li {
@@ -22,7 +28,7 @@ a {
 }
 
 span {
-  color: $font-color-span;
+  color: $font-color-distinct;
 }
 
 .main-container {
@@ -32,4 +38,9 @@ span {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.LI-profile-badge {
+  height: 200px;
+  width: 100px;
 }

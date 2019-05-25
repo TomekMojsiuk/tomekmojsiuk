@@ -1,0 +1,36 @@
+@import "../Config/colors";
+@import "../Config/functions";
+/*======= HAMBURGER =========*/
+
+.hamburger {
+ //display: block;
+ // margin: 20px 0 20px 10px;
+ position: fixed;
+ top: 15px;
+ right: 10px;
+ width: 30px;
+ height: 30px;
+ z-index: 3;
+
+ .hamburger--line {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 9px;
+  background-color: $font-color-distinct;
+  border-radius: 2px;
+
+  &:last-child {
+   margin-bottom: 0;
+  }
+ }
+
+ &:active {
+  .hamburger--line {
+   background-color: fade-out($font-color-distinct, 0.4);
+  }
+ }
+
+ @media all and (min-width: $breakpoint-desktop) {
+  display: none;
+ }
+}
