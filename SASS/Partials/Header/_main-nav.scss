@@ -27,6 +27,8 @@
   :focus {
    border: 1px solid $font-color-distinct;
    border-radius: 5px;
+   outline: none;
+   background: none;
   }
  }
 
@@ -38,6 +40,7 @@
   height: 70px;
   border: none;
   box-shadow: none;
+  margin-bottom: 30px;
 
   &--item {
    width: 150px;

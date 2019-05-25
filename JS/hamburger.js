@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
     //Create hamburger 
  const nav = $("nav");

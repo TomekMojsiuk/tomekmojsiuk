@@ -21,21 +21,21 @@ header {
  top: 50px;
 }
 
-
-
 //Icons
 .social--media--icons {
  display: flex;
- flex-direction: column;
- justify-content: space-between;
+ position: fixed;
+ top: 16px;
+ left: 10px;
+ flex-direction: row;
+ justify-content: space-around;
  align-items: center;
- width: 90%;
- height: 80px;
+ width: 60%;
+ height: 30px;
  transition: all 0.3s ease-in-out;
 
  @media all and (min-width: $breakpoint-desktop) {
-  flex-direction: row;
-  justify-content: space-around;
+  position: initial;
   align-items: center;
   width: 50%;
  }
@@ -50,6 +50,10 @@ header {
   @media all and (min-width: $breakpoint-desktop) {
    height: 67px;
    width: 67px;
+   transition: all 0.3s ease-in-out;
   }
  }
+ :hover {
+    transform: rotate(360deg);
+}
 }
