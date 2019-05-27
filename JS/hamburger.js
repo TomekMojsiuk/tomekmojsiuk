@@ -1,14 +1,13 @@
 $(document).ready(function() {
-
-    //Create hamburger 
+ //Create hamburger
  const nav = $("nav");
  console.log(nav);
 
  let hamburger = $(
   "<div class='hamburger'>" +
-   "<div class='hamburger--line'></div>" +
-   "<div class='hamburger--line'></div>" +
-   "<div class='hamburger--line'></div>" +
+   "<div class='hamburger__line'></div>" +
+   "<div class='hamburger__line'></div>" +
+   "<div class='hamburger__line'></div>" +
    "</div>"
  );
 
@@ -17,11 +16,12 @@ $(document).ready(function() {
  //Toggle mobile-nav on click
 
  if (window.matchMedia("(max-width: 640px)").matches) {
-   const mainNavList = $('.main--nav--list');
- mainNavList.hide();
-    hamburger.on('click', function () {
-      mainNavList.toggle();     
-  })
-    
+  const mainNavList = $(".nav__list");
+  
+  mainNavList.hide();
+
+  hamburger.on("click", function() {
+   mainNavList.toggle();
+  });
  }
 });

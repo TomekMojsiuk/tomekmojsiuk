@@ -11,26 +11,27 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous">
-  ></script>
+  </script>
  </head>
 
  <body>
-  <div class="main-container">
-   <header>
+  <div class="main__container">
+   <!-- Arrow scroll-to-top appears here -->
+    <header>
     <!-- Hamburger in mobile version appears here -->
-    <!-- <div class="title">&lt;tomekMojsiuk&gt;</div> -->
+
     <div class="title">Welcome to my webpage!</div>
     <nav>
-     <div class="main--nav">
-      <ul class="main--nav--list">
-       <li class="main--nav--list--item"><a href="#">About</a></li>
-       <li class="main--nav--list--item"><a href="#">Portfolio</a></li>
-       <li class="main--nav--list--item"><a href="#">Contact</a></li>
+     <div class="nav">
+      <ul class="nav__list">
+       <li class="nav__list__item"><a href="#about">About</a></li>
+       <li class="nav__list__item"><a href="#portfolio">Portfolio</a></li>
+       <li class="nav__list__item"><a href="#contact">Contact</a></li>
       </ul>
      </div>
     </nav>
 
-    <div class="social--media--icons">
+    <div class="social__media__icons">
      <div class="icon linkedin">
       <img src="./assets/icons/linkedin_orange.svg" alt="" />
      </div>
@@ -44,9 +45,9 @@
    </header>
    <main>
     <section class="home"></section>
-    <section class="about--me">About me</section>
-    <section class="portfolio">Portfolio</section>
-    <section class="contact">Contact me</section>
+    <section id="about" class="about">About me</section>
+    <section id="portfolio" class="portfolio">Portfolio</section>
+    <section id="contact" class="contact">Contact me</section>
    </main>
    <footer>Footer</footer>
   </div>

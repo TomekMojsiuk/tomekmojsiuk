@@ -1,4 +1,5 @@
-import './navMobile';
+import './arrowGoToTop';
+import './nav';
 import './hamburger';
 import './social-media-icons';
 
@@ -6,7 +7,7 @@ import '../SASS/Style.scss';
 
 $(document).ready(function () {
 
-    const mainNav = $('.main--nav');
+    const mainNav = $('.nav');
     console.log(mainNav); 
 
     const title = $('.title');

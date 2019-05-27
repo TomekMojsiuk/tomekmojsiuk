@@ -31,16 +31,11 @@ span {
   color: $font-color-distinct;
 }
 
-.main-container {
+.main__container {
   margin: 0 auto;
   padding: 0 10px;
-  max-width: 900px;
+  max-width: 1100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.LI-profile-badge {
-  height: 200px;
-  width: 100px;
 }
