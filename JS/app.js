@@ -2,6 +2,7 @@ import './arrowGoToTop';
 import './nav';
 import './hamburger';
 import './social-media-icons';
+import './copyrights';
 
 import '../SASS/Style.scss';
 
@@ -13,7 +14,7 @@ $(document).ready(function () {
     const title = $('.title');
     title.hide();
     if (window.matchMedia("(min-width: 640px)").matches) {
-        //title.show();
+        title.show();
     }
     
 

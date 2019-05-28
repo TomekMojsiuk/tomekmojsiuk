@@ -1,21 +1,35 @@
 @import "./colors";
 @import "./functions";
+@import "./fonts";
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   color: $font-color-main;
 }
 
 html,
 body {
-  font-family: "Calibri Light", sans-serif;
+  @include font--Open--Sans;
   font-size: 20px;
-  min-height: 1000px;
+  min-height: 410vh;
   background: $bg-main-color_2;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media all and (min-width: $breakpoint-desktop) {
-    min-height: 2000px;
+    min-height: 500vh;
+    overflow-x: hidden;
+   }
+}
+
+section {
+  min-height: 100vh;
+  padding: 80px 0 0 0;
+
+  @media all and (min-width: $breakpoint-desktop) {
+    padding: 40px 0;
    }
 }
 

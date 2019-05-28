@@ -14,6 +14,7 @@
  text-align: center;
  border-radius: 5px;
  box-shadow: $box-shadow;
+ background: fade-out($bg-box-color, .6);
  transition: all .3s ease-in-out;
 
  &__item {
@@ -31,8 +32,6 @@
   :active {
    border: 1px solid $font-color-distinct;
    border-radius: 5px;
-//    outline: none;
-//    background: none;
 
   }
  }
@@ -41,11 +40,13 @@
   position: initial;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 450px;
+  justify-content: space-between;
+  left: calc(50% - 250px);
+  width: 500px;
   height: 70px;
   border: none;
   box-shadow: none;
+  background: none;
   margin-bottom: 30px;
   transition: all .3s ease-in-out;
 
@@ -91,9 +92,11 @@
  }
 }
 
-.display__item {
-    display: flex;
-    height: 345px;
-    // transition: .8s all ease-in-out;
+.sticky__nav--add {
+    position: fixed;
+    font-size: 1rem;
+    top: 15px;
+    height: 70px;
+    left: calc(50% - 250px);
 }
 

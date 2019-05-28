@@ -1,13 +1,18 @@
 @import './Config/colors';
 @import './Config/config';
 @import './Config/functions';
+@import './Config/fonts';
 
-//Assets
+//Partials
 @import './Partials/General/arrow--up';
 @import './Partials/Header/hamburger';
 @import './Partials/Header/nav';
-
+@import './Partials/Header/header';
+@import './Partials/Header/social-media-icons';
+@import './Partials/General/contenteffects.scss';
 
 // Sections
-@import './Partials/Header/header';
+@import './Partials/Sections/About/about';
+
+@import './Partials/Sections/Footer/footer';
 

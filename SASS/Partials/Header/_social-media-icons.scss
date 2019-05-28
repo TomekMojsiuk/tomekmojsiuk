@@ -1,0 +1,55 @@
+@import '../../Config/functions';
+
+.social__media__icons {
+    display: flex;
+    position: fixed;
+    top: 16px;
+    left: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+   
+    @media all and (min-width: $breakpoint-desktop) {
+     position: initial;
+     align-items: center;
+     justify-content: space-between;
+     width: 415px;
+    }
+   }
+   
+   .email,
+   .github,
+   .linkedin {
+    img {
+     height: 30px;
+     width: 30px;
+     @media all and (min-width: $breakpoint-desktop) {
+      height: 67px;
+      width: 67px;
+      transition: all 0.3s ease-in-out;
+     }
+    }
+    :hover {
+     transform: rotate(360deg);
+    }
+   }
+
+   .sticky__icons--add {
+    position: fixed;
+    justify-content: space-around;
+    //flex-direction: column;
+    font-size: 1rem;
+    //top: 36px;
+    left: calc(50% - 150px);
+    top: 95vh;
+    //height: 300px;
+    width: 300px;
+    transition: all .8s ease-in-out;
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}

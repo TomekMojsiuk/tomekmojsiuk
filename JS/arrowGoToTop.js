@@ -1,20 +1,27 @@
 $(document).ready(function() {
  const mainContainer = $(".main__container");
- console.log(mainContainer);
 
  const arrowUp = $("<div class='arrow--up'></div>");
-
  mainContainer.append(arrowUp);
 
  const arrow = $(".arrow--up");
 
-  arrow.on("click", function() {
+ //Display arrowUp
+ arrow.hide();
+ window.addEventListener("scroll", function() {
+  if (window.pageYOffset >= 500) {
+   arrowUp.css("display", "initial");
+  } else {
+   arrowUp.css("display", "none");
+  }
+ });
 
-   $("body, html").animate(
-    {
-     scrollTop: $("header").offset().top
-    },
-    600
-   );
-  });
+ arrow.on("click", function() {
+  $("body, html").animate(
+   {
+    scrollTop: $("header").offset().top
+   },
+   600
+  );
+ });
 });

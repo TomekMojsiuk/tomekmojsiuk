@@ -21,4 +21,17 @@ $(document).ready(function() {
   
    });
 
+   if (window.matchMedia("(min-width: 640px)").matches) {
+  
+      const socialMediaIcons = $('.social__media__icons');
+
+     $(this).on("scroll", function() {
+      if (window.pageYOffset > 450) {
+       socialMediaIcons.addClass("sticky__icons--add");
+      } else {
+       socialMediaIcons.removeClass("sticky__icons--add");
+      }
+     });
+    }
+
 });
