@@ -13,8 +13,8 @@
  align-items: center;
  text-align: center;
  border-radius: 5px;
- box-shadow: $box-shadow;
- background: fade-out($bg-box-color, .6);
+ //box-shadow: $box-shadow;
+ background: fade-out(#05111A, .1);
  transition: all .3s ease-in-out;
 
  &__item {
@@ -25,7 +25,7 @@
   a {
    display: block;
    width: 100%;
-   padding: 5px 0;
+   padding: 8px 0;
    border: 1px solid transparent;
    
   }

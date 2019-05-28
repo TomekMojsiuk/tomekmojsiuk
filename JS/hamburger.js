@@ -16,6 +16,7 @@ $(document).ready(function() {
  //Toggle mobile-nav on click
 
  if (window.matchMedia("(max-width: 640px)").matches) {
+
   const mainNavList = $(".nav__list");
   
   mainNavList.hide();
