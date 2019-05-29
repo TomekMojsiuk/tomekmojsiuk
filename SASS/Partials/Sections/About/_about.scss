@@ -1,4 +1,53 @@
+@import '../../../Config/functions';
+
 #about {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .textbox {
+        box-shadow: $box-shadow;
+        width: 95%;
+        font-size: .9rem;
+        text-align: justify;
+        padding: 5px 10px;
+        @media all and (min-width: $breakpoint-desktop) {
+         width: 50%;
+         padding: 15px;
+         text-align: justify;
+         border-left: 3px solid $font-color-distinct;
+        }
+
+        h2 {
+            align-self: flex-start;
+            margin: 20px 0;
+            letter-spacing: 3px;
+            span {
+                font-size: 2rem;
+                margin-right: 3px;
+            }
+    
+            @media all and (min-width: $breakpoint-desktop) {
+                margin: 40px 0;
+            }
+        }
+
+        p {
+            letter-spacing: 2px;
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+    .image {
+        img {
+
+            height: 500px;
+            width: auto;
+            border-radius: 5px; 
+        }
+    }
 
 }
