@@ -16,7 +16,7 @@ $(document).ready(function() {
  email.on("click", function() {
 
     $('body, html').animate({
-        scrollTop: $(".contact").offset().top
+        scrollTop: $("#contact").offset().top
       }, 600);
   
    });

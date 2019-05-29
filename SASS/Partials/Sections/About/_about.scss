@@ -16,6 +16,11 @@
         font-size: .9rem;
         text-align: justify;
         padding: 5px 10px;
+        //border-left: 1px solid $font-color-distinct;
+        border: 1px solid;
+        border-image: linear-gradient(to bottom, $font-color-distinct, transparent) 90 20;
+        border-top: none;
+        border-right: none;
         @media all and (min-width: $breakpoint-desktop) {
          width: 50%;
          padding: 15px;
@@ -25,7 +30,7 @@
 
         h2 {
             align-self: flex-start;
-            margin: 20px 0;
+            margin: 10px 0;
             letter-spacing: 3px;
             span {
                 font-size: 2rem;
