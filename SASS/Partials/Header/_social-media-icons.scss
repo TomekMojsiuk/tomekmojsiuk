@@ -13,10 +13,13 @@
     transition: all 0.3s ease-in-out;
    
     @media all and (min-width: $breakpoint-desktop) {
-     position: initial;
+     position: absolute;
+     top: calc(60% - 50px);
+     left: calc(50% - 208px);
      align-items: center;
      justify-content: space-between;
-     width: 415px;
+     width: 416px;
+     height: 50px;
     }
    }
    
@@ -40,12 +43,9 @@
    .sticky__icons--add {
     position: fixed;
     justify-content: space-around;
-    //flex-direction: column;
     font-size: 1rem;
-    //top: 36px;
     left: calc(50% - 150px);
     top: 92vh;
-    //height: 300px;
     width: 300px;
     transition: all .8s ease-in-out;
     img {

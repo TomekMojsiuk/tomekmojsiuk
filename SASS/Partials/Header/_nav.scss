@@ -14,25 +14,23 @@
  text-align: center;
  border-radius: 5px;
  //box-shadow: $box-shadow;
- background: fade-out(#05111A, .1);
- transition: all .3s ease-in-out;
+ background: fade-out(#05111a, 0.1);
+ transition: all 0.3s ease-in-out;
 
  &__item {
   width: 300px;
   margin: 20px 0;
   animation: showItem 1s;
-  
+
   a {
    display: block;
    width: 100%;
    padding: 8px 0;
    border: 1px solid transparent;
-   
   }
   :active {
    border: 1px solid $font-color-distinct;
    border-radius: 5px;
-
   }
  }
 
@@ -48,7 +46,7 @@
   box-shadow: none;
   background: none;
   margin-bottom: 30px;
-  transition: all .3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 
   &__item {
    width: 150px;
@@ -93,10 +91,9 @@
 }
 
 .sticky__nav--add {
-    position: fixed;
-    font-size: 1rem;
-    top: 15px;
-    height: 70px;
-    left: calc(50% - 250px);
+ position: fixed;
+ font-size: 1rem;
+ top: 15px;
+ height: 70px;
+ left: calc(50% - 250px);
 }
-
