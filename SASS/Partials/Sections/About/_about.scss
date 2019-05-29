@@ -3,8 +3,8 @@
 
 
 #about {
-    //@include font--Mukta; ok
-    @include font--Poppins;
+    @include font--Mukta;
+    //@include font--Poppins;
     display: flex;
     flex-direction: column;
     justify-content: center;
