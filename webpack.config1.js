@@ -1,0 +1,78 @@
+
+const path = require('path');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const webpack = require('webpack');
+
+module.exports = {
+  context: path.join(__dirname, 'src'),
+  entry: './js/app',
+  watch: true,
+  // output: {
+  //   path: path.join(__dirname, 'dist'),
+  //   filename: '[name].bundle.js'
+  // },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+						presets: ['es2015'],
+					}
+        },
+        include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.css$/,
+        loader: ['style-loader', 'css-loader'],
+        include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.scss$/,
+        loader: ['style-loader', 'css-loader', 'sass-loader'],
+        include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        loader: 'file-loader',
+        include: path.join(__dirname, 'src')
+      }
+    ]
+  },
+  
+  // devServer: {
+  //   contentBase: path.join(__dirname, 'dist'),
+  //   inline: true,
+  //   hot: true,
+  //   historyApiFallback: true,
+
+  // },
+  resolve: {
+
+    alias: {
+      'styles': path.resolve(__dirname, 'src/sass'),
+      'images': path.resolve(__dirname, 'src/assets')
+    }
+  },
+
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     template: path.join(__dirname, 'src', 'index.html'),
+  //     inject: 'body',
+  //     excludeChunks: ['about'],
+  //     filename: 'index.html'
+  //   }),
+  //   new HtmlWebpackPlugin({
+  //     template: path.join(__dirname, 'src', 'index.html'),
+  //     inject: 'body',
+  //     excludeChunks: ['home'],
+  //     filename: 'about.html'
+  //   }),
+  //   new webpack.HotModuleReplacementPlugin(),
+
+  //   new webpack.optimize.CommonsChunkPlugin({
+  //     name: 'common'
+  //   })
+  // ]
+};
