@@ -1,7 +1,7 @@
 $(document).ready(function() {
- const mainContainer = $(".main__container");
+ const nav = $("nav");
 
- const arrowUp = $("<div class='arrow--up'></div>");
+ const arrowDOwn = $("<div class='arrow--down'></div>");
  mainContainer.append(arrowUp);
 
  const arrow = $(".arrow--up");
@@ -15,11 +15,11 @@ $(document).ready(function() {
    arrowUp.css("display", "none");
   }
  });
-
+//TODO finish arrow scrolling to next section
  arrow.on("click", function() {
   $("body, html").animate(
    {
-    scrollTop: $("header").offset().top
+    scrollTop: $("abour").offset().top
    },
    600
   );

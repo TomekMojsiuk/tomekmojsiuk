@@ -15,7 +15,7 @@ $(document).ready(function() {
 
  setTimeout(() => {
   $(".loading__page").hide();
- }, 3000);
+ }, 500);
 
  const mainNav = $(".nav");
  console.log(mainNav);

@@ -26,3 +26,8 @@
   font-weight: 100;
   letter-spacing: 1px;
 }
+
+@mixin font--Calibri--Light {
+  font-family: 'Calibri Light', sans-serif;
+  letter-spacing: 1px;
+}

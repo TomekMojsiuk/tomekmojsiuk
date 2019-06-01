@@ -3,7 +3,8 @@
 .copyrights {
     
     position: absolute;
-    font-size: .6rem;
+    display: block;
+    font-size: 1.2rem;
     height: 30px;
     width: 220px;
     bottom: -12px;
@@ -13,13 +14,18 @@
     border-top: 1px solid $font-color-distinct;
 
  @media all and (min-width: $breakpoint-desktop) {
-   font-size: 1rem;
+   font-size: 1.7rem;
    height: 45px;
    width: 340px;
    bottom: 1vh;
    left: 0;
    border-right: 3px solid $font-color-distinct;
    border-top: 3px solid $font-color-distinct;
+   transition: all .5s ease-in-out;
  }
 
+}
+
+.display {
+  left: -100%;
 }

@@ -1,6 +1,7 @@
 @import "../../Config/functions";
 
 header {
+   @include font--Calibri--Light;
  position: relative;
  display: flex;
  flex-direction: column;
@@ -10,7 +11,7 @@ header {
  min-height: 100vh;
 
  @media all and (min-width: $breakpoint-desktop) {
-  font-size: 1.5rem;
+  font-size: 2rem;
   min-height: 100vh;
   justify-content: center;
  }

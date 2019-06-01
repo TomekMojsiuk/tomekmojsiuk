@@ -29,8 +29,8 @@
     transition: all .3s ease-in-out;
 
     @media all and (min-width: $breakpoint-desktop) {
-        height: 67px;
-        width: 67px;
+        height: 50px;
+        width: 50px;
         &:hover {
             transform: rotate(360deg);
            }

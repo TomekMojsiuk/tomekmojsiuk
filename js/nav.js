@@ -15,15 +15,19 @@ $(document).ready(function() {
     600
    );
 
+   
    // Hide navlist on redirect in mobile version
+   
    if (window.matchMedia("(max-width: 640px)").matches) {
     navList.hide();
+   } else {
+     navList.show();
    }
   });
  });
 
 
-  if (window.matchMedia("(min-width: 640px)").matches) {
+  if (window.matchMedia("(min-width: 641px)").matches) {
    
     console.log($(this));
 
