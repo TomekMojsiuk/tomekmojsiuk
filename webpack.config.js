@@ -1,10 +1,10 @@
 var path = require('path');
 
 module.exports = {
-	entry: './src/js/app.js',
+	entry: './js/app.js',
 	output: {
 		filename: 'out.js',
-		path: path.resolve(__dirname, 'src/js')
+		path: path.resolve(__dirname, 'js')
 	},
 	mode: 'development',
 	watch: true,

@@ -1,0 +1,59 @@
+@import '../../../Config/functions';
+@import '../../../Config/fonts';
+
+
+#about {
+    //@include font--Mukta;
+    //@include font--Poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .textbox {
+        width: 95%;
+        font-size: .9rem;
+        text-align: justify;
+        padding: 10px 10px;
+        border: 1px solid;
+        border-image: linear-gradient(to bottom, $font-color-distinct, transparent) 90 20;
+        border-top: none;
+        border-right: none;
+        @media all and (min-width: $breakpoint-desktop) {
+         width: 50%;
+         padding: 15px;
+         text-align: justify;
+         border-left: 3px solid $font-color-distinct;
+        }
+
+        h2 {
+            align-self: flex-start;
+            margin: 10px 0;
+            letter-spacing: 3px;
+            span {
+                font-size: 2rem;
+                margin-right: 3px;
+            }
+    
+            @media all and (min-width: $breakpoint-desktop) {
+                margin: 40px 0;
+            }
+        }
+
+        p {
+            letter-spacing: 2px;
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+    .image {
+        img {
+
+            height: 500px;
+            width: auto;
+            border-radius: 5px; 
+        }
+    }
+
+}
