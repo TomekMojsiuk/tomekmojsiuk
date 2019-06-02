@@ -1,73 +1,143 @@
-@import '../../../Config/colors';
-@import '../../../Config/functions';
+@import "../../../Config/colors";
+@import "../../../Config/functions";
 
-     
 #portfolio {
+@include font--Calibri--Light;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+ width: 100%;
+ padding: 50px 10px 0 10px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  //height: 200px;
+ @media all and (min-width: $breakpoint-desktop) {
+  flex-direction: row;
+ }
+}
+
+.project {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ width: 100%;
+ min-height: 200px;
+ padding: 0 0 0 5px;
+ margin: 20px 0;
+ border-left: 1px solid;
+ @include borderImg;
+
+ .project__img {
+     position: relative;
+  height: 100%;
   width: 100%;
-  padding: 5px 10px;
-  //border: 1px solid grey;
+  img {
+   height: 100%;
+   width: 100%;
+  }
 
   @media all and (min-width: $breakpoint-desktop) {
-    flex-direction: row;
+   height: 200px;
+   width: 200px;
   }
+
+  &:hover, &:active, &:focus {
+    .project__img--detalis {
+        height: 100%;
+    .show__code, .show__preview {
+    display: initial;
+}
+    }
+}
  }
 
- .project {
+ .project__img--detalis {
+     position: absolute;
      display: flex;
-     flex-direction: column;
-     align-items: center;
+     flex-direction: row;
+     flex-wrap: nowrap;
      justify-content: center;
+     align-items: center;
+     height: 0%;
      width: 100%;
-     height: 200px;
-     padding: 0 0 0 5px;
-     margin: 20px 0;
-     border-left: 1px solid;
-     @include borderImg;
+     bottom: 0;
+     left: 0;
+     background: fade-out($bg-single-navyblue, .5);
+     transition: all .3s ease-in-out;
+     z-index: 1;
 
-  .project__img {
-      height: 100%;
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      img {
-          height: 100%;
-          width: 100%;
-      }
+     .show__code {
+         display: none;
+         height: 50px;
+         width: 50px;
+         margin-right: 40px;
+         background: url('../assets/show_code.svg');
+         background-size: cover;
+         background-repeat: no-repeat;
+         transition: all .3s ease-in-out;
 
-      @media all and (min-width: $breakpoint-desktop) {
-        height: 200px;
-        width: 200px;
-      }
-  }
+     }
+     .show__preview {
+        display: none;
+        height: 50px;
+        width: 50px;
+        background: url('../assets/live_preview.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .3s ease-in-out;
+        transition-delay: .5s;
+    }
 
-  .project__description {
-
-  }
-  .html {
-      background: url('../assets/html5.svg');
-  }
-  .css {
-    background: url('../assets/css3.svg');
-  }
-  .sass {
-    background: url('../assets/sass.svg');
-  }
-  .js {
-    background: url('../assets/js.svg');
-  }
-  .jquery {
-    background: url('../assets/jquery.svg');
-  }
-  .react {
-    background: url('../assets/react.svg');
-  }
-  .vscode {
-    background: url('../assets/vscode.svg');
-  }
  }
+
+ .project__details {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  //border-bottom: 1px solid $font-color-distinct;
+
+  .used__technologies {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   height: auto;
+   padding: 10px 0;
+   .tech {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+  }
+  .description {
+      padding: 10px 0;
+    font-size: 2rem;
+}
+ }
+
+ .html {
+  background: url("../assets/html5.svg");
+ }
+ .css {
+  background: url("../assets/css3.svg");
+ }
+ .sass {
+  background: url("../assets/sass.svg");
+ }
+ .js {
+  background: url("../assets/js.svg");
+ }
+ .jquery {
+  background: url("../assets/jquery.svg");
+ }
+ .react {
+  background: url("../assets/react.svg");
+ }
+ .vscode {
+  background: url("../assets/vscode.svg");
+ }
+}
