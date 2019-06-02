@@ -11,6 +11,7 @@
     width: 60%;
     height: 30px;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
    
     @media all and (min-width: $breakpoint-desktop) {
      position: absolute;
@@ -58,12 +59,12 @@
     justify-content: space-around;
     font-size: 1rem;
     left: calc(50% - 150px);
-    top: 92vh;
+    top: 93vh;
     width: 300px;
     transition: all .8s ease-in-out;
 
     .icon {
-        height: 50px;
-        width:50px;
+        height: 40px;
+        width:40px;
     }
 }

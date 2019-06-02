@@ -1,4 +1,4 @@
-$(document).ready(function() {
+const arrowUpElement = () => {
  const mainContainer = $(".main__container");
 
  const arrowUp = $("<div class='arrow--up'></div>");
@@ -24,4 +24,6 @@ $(document).ready(function() {
    600
   );
  });
-});
+};
+
+export default arrowUpElement;

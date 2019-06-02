@@ -15,13 +15,6 @@ header {
   min-height: 100vh;
   justify-content: center;
  }
-
-//  .bg--img {
-//    height: 200px;
-//    width: 200px;
-//    border: 1px solid black;
-//    background: url('../pic/email_orange.svg');
-//  }
 }
 
 .title__mobile {
@@ -30,15 +23,15 @@ header {
  align-items: center;
  justify-content: center;
  :nth-child(1) {
-     font-size: 1.5rem;
+     font-size: 2.5rem;
   span {
-   font-size: 2rem;
+   font-size: 3.5rem;
   }
  }
  :nth-child(2) {
-    font-size: .9rem;
+    font-size: 1.4rem;
  span {
-  font-size: 1.1rem;
+  font-size: 2rem;
  }
 }
 

@@ -11,6 +11,7 @@
     width: 100vw;
     background: $bg-main-color;
     transition: all .3s ease-in-out;
+    z-index: 30;
 
     .lds-roller {
         display: inline-block;

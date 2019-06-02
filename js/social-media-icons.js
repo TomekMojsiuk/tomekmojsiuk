@@ -1,4 +1,4 @@
-$(document).ready(function() {
+const socialMediaIconsElement = () => {
  //Social media icons
 
  const linkedin = $(".linkedin");
@@ -14,24 +14,25 @@ $(document).ready(function() {
  });
 
  email.on("click", function() {
+  $("body, html").animate(
+   {
+    scrollTop: $("#contact").offset().top
+   },
+   600
+  );
+ });
 
-    $('body, html').animate({
-        scrollTop: $("#contact").offset().top
-      }, 600);
-  
-   });
+ if (window.matchMedia("(min-width: 640px)").matches) {
+  const socialMediaIcons = $(".social__media__icons");
 
-   if (window.matchMedia("(min-width: 640px)").matches) {
-  
-      const socialMediaIcons = $('.social__media__icons');
+  $(window).on("scroll", function() {
+   if (window.pageYOffset > 450) {
+    socialMediaIcons.addClass("sticky__icons--add");
+   } else {
+    socialMediaIcons.removeClass("sticky__icons--add");
+   }
+  });
+ }
+};
 
-     $(this).on("scroll", function() {
-      if (window.pageYOffset > 450) {
-       socialMediaIcons.addClass("sticky__icons--add");
-      } else {
-       socialMediaIcons.removeClass("sticky__icons--add");
-      }
-     });
-    }
-
-});
+export default socialMediaIconsElement;

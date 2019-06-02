@@ -1,27 +1,29 @@
-$(document).ready(function() {
+const arrowDownElement = () => {
  const nav = $("nav");
 
- const arrowDOwn = $("<div class='arrow--down'></div>");
- mainContainer.append(arrowUp);
+ const createArrowDown = $("<div class='arrow--down'></div>");
+ nav.append(createArrowDown);
 
- const arrow = $(".arrow--up");
+ const arrowDown = $(".arrow--down");
 
- //Display arrowUp
- arrow.hide();
+ //Display arrowDown
+
  window.addEventListener("scroll", function() {
   if (window.pageYOffset >= 500) {
-   arrowUp.css("display", "initial");
+   arrowDown.css("display", "none");
   } else {
-   arrowUp.css("display", "none");
+   arrowDown.css("display", "block");
   }
  });
-//TODO finish arrow scrolling to next section
- arrow.on("click", function() {
+
+ arrowDown.on("click", function() {
   $("body, html").animate(
    {
-    scrollTop: $("abour").offset().top
+    scrollTop: $("#about").offset().top
    },
    600
   );
  });
-});
+};
+
+export default arrowDownElement;

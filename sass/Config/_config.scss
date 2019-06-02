@@ -25,12 +25,33 @@ body {
 }
 
 section {
-  font-family: 'Calibri Light', sans-serif;
+  @include font--Calibri--Light;
   min-height: 100vh;
   padding: 50px 0 20px 0;
 
   @media all and (min-width: $breakpoint-desktop) {
-    padding: 150px 0 20px 0;
+    padding: 80px 0 20px 0;
+   }
+
+   h2 {
+    align-self: flex-start;
+    margin: 10px 0 30px 10px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  
+    span {
+     font-size: 3.5rem;
+     margin-right: 2px;
+    }
+  
+    @media all and (min-width: $breakpoint-desktop) {
+     margin: 40px 0;
+     margin-left: calc(20%);
+
+     span {
+      margin-right: 0;
+     }
+    }
    }
 }
 

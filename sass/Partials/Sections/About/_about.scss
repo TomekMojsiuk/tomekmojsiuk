@@ -1,59 +1,119 @@
-@import '../../../Config/functions';
-@import '../../../Config/fonts';
-
+@import "../../../Config/functions";
+@import "../../../Config/fonts";
 
 #about {
-    //@include font--Mukta;
-    //@include font--Poppins;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 
-    .textbox {
-        width: 95%;
-        font-size: .9rem;
-        text-align: justify;
-        padding: 10px 10px;
-        border: 1px solid;
-        border-image: linear-gradient(to bottom, $font-color-distinct, transparent) 90 20;
-        border-top: none;
-        border-right: none;
-        @media all and (min-width: $breakpoint-desktop) {
-         width: 50%;
-         padding: 15px;
-         text-align: justify;
-         border-left: 3px solid $font-color-distinct;
-        }
+ @media all and (min-width: $breakpoint-desktop) {
+  justify-content: flex-start;
+ }
 
-        h2 {
-            align-self: flex-start;
-            margin: 10px 0;
-            letter-spacing: 3px;
-            span {
-                font-size: 2rem;
-                margin-right: 3px;
-            }
-    
-            @media all and (min-width: $breakpoint-desktop) {
-                margin: 40px 0;
-            }
-        }
+ .contentbox {
+  width: 95%;
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 5px 10px;
+  border: 1px solid;
+  border-top: none;
+  border-right: none;
+  @include borderImg;
+  @media all and (min-width: $breakpoint-desktop) {
+   width: 60%;
+   padding: 5px 15px 10px 15px;
+   font-size: 2.5rem;
+   text-align: left;
+   border-left: 1px solid $font-color-distinct;
+  }
 
-        p {
-            letter-spacing: 2px;
-            width: 100%;
-            margin: 10px 0;
-        }
-    }
+  p {
+   letter-spacing: 1px;
+   width: 100%;
+   margin: 10px 0;
+  }
+  // First <p> within a textbox
+  :first-child {
+   margin: 0 0 10px 0;
+  }
+ }
 
-    .image {
-        img {
+ .tech__box {
+    width: 100%;
+   margin: 50px 0 0 0;
 
-            height: 500px;
-            width: auto;
-            border-radius: 5px; 
-        }
-    }
+}
 
+ .technologies {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  z-index: 2;
+ 
+  ::after {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+   background-image: url('../assets/technology--small.jpg');
+   opacity: .1;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+   z-index: -1;
+  }
+
+  @media all and (min-width: $breakpoint-desktop) {
+   height: 200px;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+  }
+
+  .tech__img {
+   height: 70px;
+   width: 70px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 1;
+
+   @media all and (min-width: $breakpoint-desktop) {
+      height: 100px;
+      width: 100px;
+     }
+  }
+  :nth-child(1) {
+   margin-bottom: 0;
+  }  
+ }
+
+ .html {
+  background: url("../assets/html5.svg");
+ }
+ .css {
+  background: url("../assets/css3.svg");
+ }
+ .sass {
+  background: url("../assets/sass.svg");
+ }
+ .js {
+  background: url("../assets/js.svg");
+ }
+ .jquery {
+  background: url("../assets/jquery.svg");
+ }
+ .react {
+  background: url("../assets/react.svg");
+ }
+ .vscode {
+  background: url("../assets/vscode.svg");
+ }
 }

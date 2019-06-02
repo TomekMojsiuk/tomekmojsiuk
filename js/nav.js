@@ -1,4 +1,4 @@
-$(document).ready(function() {
+const navElement = () => {
  // Nav list
  const navList = $(".nav__list");
  const navListItem = $(".nav__list__item>a");
@@ -14,30 +14,26 @@ $(document).ready(function() {
     },
     600
    );
-
-   
    // Hide navlist on redirect in mobile version
-   
+
    if (window.matchMedia("(max-width: 640px)").matches) {
     navList.hide();
    } else {
-     navList.show();
+    navList.show();
    }
   });
  });
 
+ if (window.matchMedia("(min-width: 641px)").matches) {
 
-  if (window.matchMedia("(min-width: 641px)").matches) {
-   
-    console.log($(this));
+  $(window).on("scroll", function() {
+   if (window.pageYOffset > 450) {
+    navList.addClass("sticky__nav--add");
+   } else {
+    navList.removeClass("sticky__nav--add");
+   }
+  });
+ }
+};
 
-   $(this).on("scroll", function() {
-    if (window.pageYOffset > 450) {
-     navList.addClass("sticky__nav--add");
-    } else {
-     navList.removeClass("sticky__nav--add");
-    }
-   });
-  }
-
-});
+export default navElement;
