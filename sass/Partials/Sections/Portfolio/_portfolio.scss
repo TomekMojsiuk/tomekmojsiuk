@@ -44,7 +44,7 @@
   &:hover, &:active, &:focus {
     .project__img--detalis {
         height: 100%;
-    .show__code, .show__preview {
+    .icon {
     display: initial;
 }
     }
@@ -66,27 +66,28 @@
      transition: all .3s ease-in-out;
      z-index: 1;
 
-     .show__code {
-         display: none;
-         height: 50px;
-         width: 50px;
-         margin-right: 40px;
-         background: url('../assets/show_code.svg');
-         background-size: cover;
-         background-repeat: no-repeat;
-         transition: all .3s ease-in-out;
-
-     }
-     .show__preview {
+     .icon {
         display: none;
         height: 50px;
         width: 50px;
+        margin-right: 40px;
+         transition: all .3s ease-in-out;
+         &:hover {
+            transform: rotate(360deg);
+         }
+     }
+     .show__code {
+         background: url('../assets/show_code.svg');
+         background-size: cover;
+         background-repeat: no-repeat;
+
+     }
+     .show__preview {
+        margin-right: 0;
         background: url('../assets/live_preview.svg');
         background-size: cover;
-        background-repeat: no-repeat;
-        transition: all .3s ease-in-out;
-        transition-delay: .5s;
-    }
+         background-repeat: no-repeat;
+     }
 
  }
 
@@ -115,7 +116,7 @@
   }
   .description {
       padding: 10px 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
  }
 

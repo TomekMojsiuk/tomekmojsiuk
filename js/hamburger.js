@@ -10,17 +10,15 @@ const hamburgerElement = () => {
  );
 
  nav.prepend(hamburger);
+ const mainNavList = $(".nav__list");
 
  //Toggle mobile-nav on click
- if (window.matchMedia("(max-width: 640px)").matches) {
-  const mainNavList = $(".nav__list");
+ hamburger.on("click", function() {
+  mainNavList.toggle();
+ });
 
-  mainNavList.hide();
+ 
 
-  hamburger.on("click", function() {
-   mainNavList.toggle();
-  });
- }
 };
 
 export default hamburgerElement;

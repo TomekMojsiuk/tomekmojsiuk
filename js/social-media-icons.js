@@ -1,6 +1,8 @@
+import { desktopBreakPoint } from "./variables";
+
 const socialMediaIconsElement = () => {
  //Social media icons
-
+ const socialMediaIcons = $(".social__media__icons");
  const linkedin = $(".linkedin");
  const github = $(".github");
  const email = $(".email");
@@ -22,17 +24,21 @@ const socialMediaIconsElement = () => {
   );
  });
 
- if (window.matchMedia("(min-width: 640px)").matches) {
-  const socialMediaIcons = $(".social__media__icons");
-
+ const pageOffset = () => {
   $(window).on("scroll", function() {
-   if (window.pageYOffset > 450) {
-    socialMediaIcons.addClass("sticky__icons--add");
+   if (window.innerWidth > desktopBreakPoint) {
+    if (window.pageYOffset > 450) {
+     socialMediaIcons.addClass("sticky__icons--add");
+    } else {
+     socialMediaIcons.removeClass("sticky__icons--add");
+    }
    } else {
     socialMediaIcons.removeClass("sticky__icons--add");
    }
   });
- }
+ };
+ pageOffset();
+
 };
 
 export default socialMediaIconsElement;
