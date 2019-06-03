@@ -2,7 +2,7 @@
 @import "../../../Config/functions";
 
 #portfolio {
-@include font--Calibri--Light;
+ @include font--Calibri--Light;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
@@ -10,8 +10,21 @@
  width: 100%;
  padding: 50px 10px 0 10px;
 
+ .projets__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media all and (min-width: $breakpoint-desktop) {
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-between;
+  }
+ }
+
  @media all and (min-width: $breakpoint-desktop) {
-  flex-direction: row;
+  flex-direction: column;
  }
 }
 
@@ -26,9 +39,12 @@
  margin: 20px 0;
  border-left: 1px solid;
  @include borderImg;
+ @media all and (min-width: $breakpoint-desktop) {
+  width: 45%;
+ }
 
  .project__img {
-     position: relative;
+  position: relative;
   height: 100%;
   width: 100%;
   img {
@@ -37,58 +53,57 @@
   }
 
   @media all and (min-width: $breakpoint-desktop) {
-   height: 200px;
-   width: 200px;
+   height: 300px;
   }
 
-  &:hover, &:active, &:focus {
-    .project__img--detalis {
-        height: 100%;
+  &:hover,
+  &:active,
+  &:focus {
+   .project__img--detalis {
+    height: 100%;
     .icon {
-    display: initial;
-}
+     display: initial;
     }
-}
+   }
+  }
  }
 
  .project__img--detalis {
-     position: absolute;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: center;
-     align-items: center;
-     height: 0%;
-     width: 100%;
-     bottom: 0;
-     left: 0;
-     background: fade-out($bg-single-navyblue, .5);
-     transition: all .3s ease-in-out;
-     z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: fade-out($bg-single-navyblue, 0.5);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
 
-     .icon {
-        display: none;
-        height: 50px;
-        width: 50px;
-        margin-right: 40px;
-         transition: all .3s ease-in-out;
-         &:hover {
-            transform: rotate(360deg);
-         }
-     }
-     .show__code {
-         background: url('../assets/show_code.svg');
-         background-size: cover;
-         background-repeat: no-repeat;
-
-     }
-     .show__preview {
-        margin-right: 0;
-        background: url('../assets/live_preview.svg');
-        background-size: cover;
-         background-repeat: no-repeat;
-     }
-
+  .icon {
+   display: none;
+   height: 50px;
+   width: 50px;
+   margin-right: 40px;
+   transition: all 0.3s ease-in-out;
+   &:hover {
+    transform: rotate(360deg);
+   }
+  }
+  .show__code {
+   background: url("../assets/show_code.svg");
+   background-size: cover;
+   background-repeat: no-repeat;
+  }
+  .show__preview {
+   margin-right: 0;
+   background: url("../assets/live_preview.svg");
+   background-size: cover;
+   background-repeat: no-repeat;
+  }
  }
 
  .project__details {
@@ -115,9 +130,9 @@
    }
   }
   .description {
-      padding: 10px 0;
-    font-size: 1.7rem;
-}
+   padding: 10px 0;
+   font-size: 1.7rem;
+  }
  }
 
  .html {

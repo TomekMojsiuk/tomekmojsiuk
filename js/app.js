@@ -4,6 +4,7 @@ import socialMediaIconsElement from "./social-media-icons";
 import copyrightsElement from "./copyrights";
 import arrowDownElement from "./arrowGoDown";
 import arrowUpElement from "./arrowGoToTop";
+import portfolio from "./portfolio";
 
 import "../SASS/Style.scss";
 const desktopBreakPoint = 740;
@@ -22,6 +23,7 @@ $(document).ready(function() {
   copyrightsElement();
   arrowDownElement();
   arrowUpElement();
+  portfolio();
  }, 1000);
 
  const mainNav = $(".nav");
