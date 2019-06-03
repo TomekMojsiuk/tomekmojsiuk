@@ -13,7 +13,7 @@ html,
 body {
   @include font--Open--Sans;
   font-size: 10px;
-  min-height: 480vh;
+  min-height: 450vh;
   background: $bg-main-color_2;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@ span {
   margin: 0 auto;
   padding: 0 10px;
   max-width: 1100px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }

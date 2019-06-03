@@ -1,21 +1,39 @@
+import { desktopBreakPoint } from "./variables";
+
 const copyrightsElement = () => {
  const copyrightsTop = $("header").find(".copyrights");
  const copyrightsBottom = $("footer").find(".copyrights");
- console.log(copyrightsTop);
 
- if (window.matchMedia("(max-width: 640px)").matches) {
-  copyrightsTop.hide();
- } else {
-  copyrightsBottom.hide();
- }
-
- window.addEventListener("scroll", function() {
-  if (window.pageYOffset >= 500) {
-   copyrightsTop.addClass("display");
+ const loadCopy = () => {
+  if (window.innerWidth < desktopBreakPoint) {
+   copyrightsTop.hide();
+   copyrightsBottom.show();
   } else {
-   copyrightsTop.removeClass("display");
+   copyrightsBottom.hide();
+   copyrightsTop.show();
   }
- });
+ };
+
+ const displayCopyOnResize = () => {
+  $(window).resize(function() {
+   loadCopy();
+  });
+ };
+
+ const copyScrollBehavior = () => {
+  $(window).on("scroll", function() {
+   if (window.pageYOffset >= 500) {
+    copyrightsTop.addClass("display");
+   } else {
+    copyrightsTop.removeClass("display");
+   }
+  });
+ };
+
+ loadCopy();
+ displayCopyOnResize();
+ copyScrollBehavior();
+ 
 };
 
 export default copyrightsElement;
