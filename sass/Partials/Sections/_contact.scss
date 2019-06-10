@@ -1,0 +1,23 @@
+@import '../../Config/functions';
+
+#contact {
+
+    @media all and (min-width: $breakpoint-desktop) {
+        
+    }
+
+
+    .contact__info {
+        
+        @media all and (min-width: $breakpoint-desktop) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 350px;
+            font-size: 2rem;    
+        }
+    }
+
+}

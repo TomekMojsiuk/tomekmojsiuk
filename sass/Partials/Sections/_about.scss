@@ -1,5 +1,5 @@
-@import "../../../Config/functions";
-@import "../../../Config/fonts";
+@import "../../Config/functions";
+@import "../../Config/fonts";
 
 #about {
  display: flex;
@@ -23,7 +23,7 @@
   @media all and (min-width: $breakpoint-desktop) {
    width: 60%;
    padding: 5px 15px 10px 15px;
-   font-size: 2.5rem;
+   font-size: 2rem;
    text-align: left;
    border-left: 1px solid $font-color-distinct;
   }
@@ -63,7 +63,8 @@
      width: 100%;
      top: 0;
      left: 0;
-   background-image: url('../assets/technology--small.jpg');
+   // background-image: url('./images/img/technology--small.jpg');
+   background-image: url('../images/img/technology--small.jpg');
    opacity: .1;
    background-size: cover;
    background-position: center;
@@ -96,24 +97,25 @@
  }
 
  .html {
-  background: url("../assets/html5.svg");
+  background: url("../images/icons/html5.svg");
  }
  .css {
-  background: url("../assets/css3.svg");
+//   background: url("../assets/icons/css3.svg");
+  background: url("../images/icons/css3.svg");
  }
  .sass {
-  background: url("../assets/sass.svg");
+  background: url("../images/icons/sass.svg");
  }
  .js {
-  background: url("../assets/js.svg");
+  background: url("../images/icons/js.svg");
  }
  .jquery {
-  background: url("../assets/jquery.svg");
+  background: url("../images/icons/jquery.svg");
  }
  .react {
-  background: url("../assets/react.svg");
+  background: url("../images/icons/react.svg");
  }
  .vscode {
-  background: url("../assets/vscode.svg");
+  background: url("../images/icons/vscode.svg");
  }
 }

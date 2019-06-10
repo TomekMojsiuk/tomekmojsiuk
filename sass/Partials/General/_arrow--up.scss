@@ -9,26 +9,27 @@
  border-top: 2px solid $font-color-distinct;
  border-left: 2px solid $font-color-distinct;
  transform: rotate(45deg);
- transition: all .3s ease-in-out;
- z-index: 1;
+ transition: all 0.3s ease-in-out;
+ z-index: 10;
 
  &:active {
-    border-color: fade-out($font-color-distinct, 0.4);
+  border-color: fade-out($font-color-distinct, 0.4);
  }
+
 
  @media all and (min-width: $breakpoint-desktop) {
   height: 35px;
   width: 35px;
   right: 100px;
   border-top: 3px solid $font-color-distinct;
- border-left: 3px solid $font-color-distinct;
+  border-left: 3px solid $font-color-distinct;
 
- &:hover {
-    border-color: fade-out($font-color-distinct, 0.4);
-    height: 38px;
-  width: 38px;
-  border-top: 4px solid $font-color-distinct;
- border-left: 4px solid $font-color-distinct;
- }
+  &:hover {
+   border-color: fade-out($font-color-distinct, 0.4);
+   height: 38px;
+   width: 38px;
+   border-top: 4px solid $font-color-distinct;
+   border-left: 4px solid $font-color-distinct;
+  }
  }
 }

@@ -21,8 +21,6 @@ $(document).ready(function() {
   hamburgerElement();
   socialMediaIconsElement();
   copyrightsElement();
-  arrowDownElement();
-  arrowUpElement();
   portfolio();
  }, 1000);
 

@@ -13,13 +13,13 @@ html,
 body {
   @include font--Open--Sans;
   font-size: 10px;
-  min-height: 450vh;
+  //min-height: 450vh;
   background: $bg-main-color_2;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media all and (min-width: $breakpoint-desktop) {
-    min-height: 500vh;
+    //min-height: 500vh;
     overflow-x: hidden;
    }
 }

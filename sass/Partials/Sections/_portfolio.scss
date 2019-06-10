@@ -1,5 +1,5 @@
-@import "../../../Config/colors";
-@import "../../../Config/functions";
+@import "../../Config/colors";
+@import "../../Config/functions";
 
 #portfolio {
  @include font--Calibri--Light;
@@ -94,13 +94,13 @@
    }
   }
   .show__code {
-   background: url("../assets/show_code.svg");
+   background: url("../images/icons/show_code.svg");
    background-size: cover;
    background-repeat: no-repeat;
   }
   .show__preview {
    margin-right: 0;
-   background: url("../assets/live_preview.svg");
+   background: url("../images/icons/live_preview.svg");
    background-size: cover;
    background-repeat: no-repeat;
   }
@@ -111,7 +111,6 @@
   flex-direction: column;
   height: auto;
   width: 100%;
-  //border-bottom: 1px solid $font-color-distinct;
 
   .used__technologies {
    display: flex;
@@ -132,28 +131,32 @@
   .description {
    padding: 10px 0;
    font-size: 1.7rem;
+
+   @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 2rem;  
+   }
   }
  }
 
  .html {
-  background: url("../assets/html5.svg");
+  background: url("../images/icons/html5.svg");
  }
  .css {
-  background: url("../assets/css3.svg");
+  background: url("../images/icons/css3.svg");
  }
  .sass {
-  background: url("../assets/sass.svg");
+  background: url("../images/icons/sass.svg");
  }
  .js {
-  background: url("../assets/js.svg");
+  background: url("../images/icons/js.svg");
  }
  .jquery {
-  background: url("../assets/jquery.svg");
+  background: url("../images/icons/jquery.svg");
  }
  .react {
-  background: url("../assets/react.svg");
+  background: url("../images/icons/react.svg");
  }
  .vscode {
-  background: url("../assets/vscode.svg");
+  background: url("../images/icons/vscode.svg");
  }
 }

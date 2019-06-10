@@ -38,17 +38,17 @@
     }
 }
     :nth-child(1) {
-        background: url('../assets/linkedin_orange.svg');
+        background: url('../images/icons/linkedin_orange.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
     :nth-child(2) {
-        background: url('../assets/github_orange.svg');
+        background: url('../images/icons/github_orange.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
     :nth-child(3) {
-        background: url('../assets/email_orange.svg');
+        background: url('../images/icons/email_orange.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -59,7 +59,7 @@
     justify-content: space-around;
     font-size: 1rem;
     left: calc(50% - 150px);
-    top: 93vh;
+    top: 92vh;
     width: 300px;
     transition: all .8s ease-in-out;
 
