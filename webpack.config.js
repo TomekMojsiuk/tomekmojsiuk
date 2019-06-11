@@ -13,7 +13,7 @@ module.exports = function(env) {
   config.entry = "./js/app.js";
   config.output = {
     filename: isDev 
-      ? "[name].js" 
+      ? "[name].js"
       : "[name].[chunkhash].js",
     path: path.resolve(__dirname, "build")
   }
