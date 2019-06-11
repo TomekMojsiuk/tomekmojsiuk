@@ -19,6 +19,8 @@ $(document).ready(function() {
   $(".loading__page").hide();
   navElement();
   hamburgerElement();
+  arrowDownElement();
+  arrowUpElement();
   socialMediaIconsElement();
   copyrightsElement();
   portfolio();
