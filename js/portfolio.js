@@ -9,7 +9,7 @@ const portfolio = () => {
  const weatherLivePreview = "https://tm-weather.netlify.com/";
 
  const projectPreview = (projectName, codePreviewUrl, livePrevievUrl) => {
-  projectName.each(function(index) {
+  projectName.each(function(element, index) {
    $(this).on("click", function() {
     if (index === 0) {
      window.open(codePreviewUrl);
@@ -20,8 +20,8 @@ const portfolio = () => {
   });
  };
 
- new projectPreview (invoiceMe, invoiceMeCodePreview, invoiceMeLivePreview);
- new projectPreview (weatherApp, weatherAppCodePreview, weatherLivePreview);
+projectPreview (invoiceMe, invoiceMeCodePreview, invoiceMeLivePreview);
+projectPreview (weatherApp, weatherAppCodePreview, weatherLivePreview);
 
 };
 

@@ -46,7 +46,7 @@ section {
   
     @media all and (min-width: $breakpoint-desktop) {
      margin: 40px 0;
-     margin-left: calc(20%);
+     margin-left: calc(20%) !important;
 
      span {
       margin-right: 0;

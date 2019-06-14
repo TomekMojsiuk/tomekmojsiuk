@@ -1,3 +1,4 @@
+import loadingPage from "./loadingPage";
 import navElement from "./nav";
 import hamburgerElement from "./hamburger";
 import socialMediaIconsElement from "./social-media-icons";
@@ -24,9 +25,6 @@ $(document).ready(function() {
   socialMediaIconsElement();
   copyrightsElement();
   portfolio();
- }, 1000);
-
- const mainNav = $(".nav");
- console.log(mainNav);
-
+ }, 2000);
+ 
 });

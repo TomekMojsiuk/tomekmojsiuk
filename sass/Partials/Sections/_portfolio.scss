@@ -97,12 +97,14 @@
    background: url("../images/icons/show_code.svg");
    background-size: cover;
    background-repeat: no-repeat;
+   z-index: 10;
   }
   .show__preview {
    margin-right: 0;
    background: url("../images/icons/live_preview.svg");
    background-size: cover;
    background-repeat: no-repeat;
+   z-index: 10;
   }
  }
 
@@ -133,7 +135,7 @@
    font-size: 1.7rem;
 
    @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 2rem;  
+    font-size: 2rem;
    }
   }
  }

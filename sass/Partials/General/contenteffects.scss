@@ -6,21 +6,21 @@
     display: block;
     font-size: 1.2rem;
     height: 30px;
-    width: 220px;
+    width: 200px;
     bottom: -12px;
     //left: -9px;
-    padding: 8px 7px;
+    padding: 8px 10px;
     border-right: 1px solid $font-color-distinct;
     border-top: 1px solid $font-color-distinct;
 
  @media all and (min-width: $breakpoint-desktop) {
    font-size: 1.7rem;
-   height: 45px;
-   width: 340px;
+   height: 34px;
+   width: 250px;
    bottom: 1vh;
    left: 0;
-   border-right: 3px solid $font-color-distinct;
-   border-top: 3px solid $font-color-distinct;
+   border-right: 1px solid $font-color-distinct;
+   border-top: 1px solid $font-color-distinct;
    transition: all .5s ease-in-out;
  }
 
