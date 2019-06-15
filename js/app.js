@@ -2,7 +2,14 @@ import loadingPage from "./loadingPage";
 import navElement from "./nav";
 import hamburgerElement from "./hamburger";
 import socialMediaIconsElement from "./social-media-icons";
-import {copyrightsElement, sectionAbout} from "./contentDisplayEffects";
+
+import {
+ copyrightsElement,
+ sectionAbout,
+ sectionPortfolio,
+ sectionContact
+} from "./contentDisplayEffects";
+
 import arrowDownElement from "./arrowGoDown";
 import arrowUpElement from "./arrowGoToTop";
 import portfolio from "./portfolio";
@@ -24,8 +31,9 @@ $(document).ready(function() {
   arrowUpElement();
   socialMediaIconsElement();
   copyrightsElement();
-sectionAbout();
   portfolio();
+  sectionAbout();
+  sectionPortfolio();
+  sectionContact();
  }, 2000);
- 
 });

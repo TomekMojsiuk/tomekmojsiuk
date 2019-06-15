@@ -45,15 +45,30 @@ section {
     }
   
     @media all and (min-width: $breakpoint-desktop) {
-     margin: 40px 0;
+     display: block;
+     opacity: 0;
+     left: -5%;
+     position: absolute;
+     width: 140px;
+      margin: 40px 0;
      margin-left: calc(20%) !important;
+     transition: all .3s ease-in-out;
 
      span {
       margin-right: 0;
      }
     }
    }
+
+   .display__H2 {
+left: 0;
+opacity: 1;
+   }
 }
+
+.content__opacity {
+  opacity: 1 !important; 
+ }
 
 ul, li {
     list-style: none;

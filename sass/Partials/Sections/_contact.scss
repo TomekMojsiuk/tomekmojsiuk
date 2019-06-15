@@ -19,6 +19,7 @@
   font-size: 2rem;
 
   @media all and (min-width: $breakpoint-desktop) {
+   opacity: 0;
     position: absolute;
    display: flex;
    flex-direction: column;
@@ -27,6 +28,7 @@
    width: 100%;
    height: 350px;
    font-size: 2.3rem;
+   transition: all .3s ease-in-out;
 
    span {
     font-size: 3.5rem;

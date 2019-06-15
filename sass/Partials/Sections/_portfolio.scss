@@ -17,9 +17,12 @@
   align-items: center;
   width: 100%;
   @media all and (min-width: $breakpoint-desktop) {
+      opacity: 0;
+    margin-top: 130px;
    flex-direction: row;
    align-items: flex-start;
    justify-content: space-between;
+   transition: all .3s ease-in-out;
   }
  }
 
