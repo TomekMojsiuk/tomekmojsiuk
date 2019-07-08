@@ -61,7 +61,7 @@ export const sectionPortfolio = () => {
 
  $(window).on("scroll", function() {
   if (window.innerWidth > desktopBreakPoint) {
-   if (window.pageYOffset > 1200) {
+   if (window.pageYOffset > 1100) {
     portfolioHeader.addClass("display__H2");
     portfolioProjects.addClass("content__opacity");
    } else {
@@ -78,7 +78,7 @@ export const sectionContact = () => {
 
  $(window).on("scroll", function() {
   if (window.innerWidth > desktopBreakPoint) {
-   if (window.pageYOffset > 2000) {
+   if (window.pageYOffset > 2400) {
     contactHeader.addClass("display__H2");
     contactInfo.addClass("content__opacity");
    } else {

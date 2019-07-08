@@ -12,6 +12,10 @@ const portfolio = () => {
  const tomekMojsiuk = $(".tomekmojsiuk").find(".icon");
  const tomekMojsiukCodePreview = "https://github.com/TomekMojsiuk/tomekmojsiuk";
 
+ const soundEnglish = $(".soundenglish").find(".icon");
+ const soundEnglishCodePreview = "https://github.com/TomekMojsiuk/sound-english";
+ const soundEnglishLivePreview = "https://sound-english.netlify.com/";
+
  const projectPreview = (projectName, codePreviewUrl, livePrevievUrl) => {
   projectName.each(function(index) {
    $(this).on("click", function() {
@@ -27,6 +31,7 @@ const portfolio = () => {
  projectPreview(invoiceMe, invoiceMeCodePreview, invoiceMeLivePreview);
  projectPreview(weatherApp, weatherAppCodePreview, weatherLivePreview);
  projectPreview(tomekMojsiuk, tomekMojsiukCodePreview, tomekMojsiukCodePreview);
+ projectPreview(soundEnglish, soundEnglishCodePreview, soundEnglishLivePreview);
 };
 
 export default portfolio;
