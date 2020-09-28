@@ -1,0 +1,1 @@
+importScripts(['https://fa4-automation-ga.getresponse.com/wpn/gr_sw.js']);
